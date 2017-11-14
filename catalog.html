@@ -13,7 +13,7 @@
         <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a>Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
@@ -26,59 +26,59 @@
 
     <main>
       <section>
-        <div class="price-control">
-          <p>Стоимость:</p>
-          <div class="price-slider">
-            <!--Здесь я еще не до конца понимаю, каким образом сделаю блок с ползунком диапазона цен-->
-          </div>
-          <div><span>от</span>
-            <input class="min-price" type="text" value="0">
-            <span>до<span>
-            <input class="max-price" type="text" value="15000">
-          </div>
-        </div>
         <form action="#" method="post">
-          <fildset>
-            <p>Сетка:</p>
-            <p>
-              <input type="radio" id="grid_1" name="grid" checked>
-              <label for="grid_1">Адаптивная</label>
-            </p>
-            <p>
-              <input type="radio" id="grid_2" name="grid">
-              <label for="grid_2">Фиксированная</lable>
-            </p>
-            <p>
-              <input type="radio" id="grid_3" name="grid">
-              <lable for="grid_3">Резиновая</label>
-            </p>
-          </fildset>
-          <fildset>
-            <legend>Особенности:</legend>
-            <p>
-              <input type="checkbox" id="checkbox_1" checked>
-              <label for="checkbox_1">Слайдер</label>
-            </p>
-            <p>
-              <input type="checkbox" id="checkbox_2">
-              <label for="checkbox_2">Блок преимуществ</label>
-            </p>
-            <p>
-              <input type="checkbox" id="checkbox_3" checked>
-              <label for="checkbox_3">Новости</label>
-            </p>
-            <p>
-              <input type="checkbox" id="checkbox_4">
-              <label for="checkbox_4">Галерея</label>
-            </p>
-            <p>
-              <input type="checkbox" id="checkbox_5" checked>
-              <label for="checkbox_5">Корзина</label>
-            </p>
-          </fildset>
-          <div>
-            <p><button type="submit">Показать</p>
-          </div>
+          <fieldset class="price-control">
+            <legend>Стоимость:</legend>
+            <div class="price-slider">
+              <!--Здесь я еще не до конца понимаю, каким образом сделаю блок с ползунком диапазона цен-->
+            </div>
+            <div><span>от</span>
+              <input class="min-price" type="text" value="0">
+              <span>до<span>
+              <input class="max-price" type="text" value="15000">
+            </div>
+          </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <p>
+                <input type="radio" id="grid_1" name="grid" checked>
+                <label for="grid_1">Адаптивная</label>
+              </p>
+              <p>
+                <input type="radio" id="grid_2" name="grid">
+                <label for="grid_2">Фиксированная</lable>
+              </p>
+              <p>
+                <input type="radio" id="grid_3" name="grid">
+                <lable for="grid_3">Резиновая</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <p>
+                <input type="checkbox" id="checkbox_1" checked>
+                <label for="checkbox_1">Слайдер</label>
+              </p>
+              <p>
+                <input type="checkbox" id="checkbox_2">
+                <label for="checkbox_2">Блок преимуществ</label>
+              </p>
+              <p>
+                <input type="checkbox" id="checkbox_3" checked>
+                <label for="checkbox_3">Новости</label>
+              </p>
+              <p>
+                <input type="checkbox" id="checkbox_4">
+                <label for="checkbox_4">Галерея</label>
+              </p>
+              <p>
+                <input type="checkbox" id="checkbox_5" checked>
+                <label for="checkbox_5">Корзина</label>
+              </p>
+            </fieldset>
+            <div>
+              <p><button type="submit">Показать</p>
+            </div>
         </form>
       </section>
 
@@ -89,8 +89,8 @@
             <a href="#">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По названию</a>
-            <a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию"></a>
-            <a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию"></a>
+            <a href="#" aria-label="По убыванию"></a>
+            <a href="#" aria-label="По возрастанию"></a>
           </div>
         </div>
 
@@ -175,9 +175,9 @@
 
     <footer>
       <ul class="social-links">
-        <li><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="26" height="15" alt="Фэйсбук"></a></li>
-        <li><a href="#"><img src="img/insta-icon.svg" width="26" height="15" alt="Инстаграм"></a></li>
+        <li><a href="#" class="social-icon vk-icon" aria-label="Вконтакте"></a></li>
+        <li><a href="#" class="social-icon fb-icon" aria-label="Фэйсбук"></a></li>
+        <li><a href="#" class="social-icon insta-icon" aria-label="Инстаграм"></a></li>
       </ul>
       <div class="footer-text">
         <p>Давайте дружить, это выгодно!</p>
