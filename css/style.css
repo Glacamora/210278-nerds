@@ -1,6 +1,6 @@
 body {
-  margin: 0;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin: 0;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -89,7 +89,7 @@ a {
   background-color: #eee;
 }
 
-.main-slider-title{
+.main-slider-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -299,6 +299,7 @@ a {
 .main-logo-partners-img {
   opacity: .3;
 }
+
 .main-logo-partners-img:hover,
 .main-logo-partners-img:focus {
   opacity: 1;
@@ -339,7 +340,11 @@ a {
   opacity: 1;
 }
 
-.catalog-title {
+.page-title {
+  background-color: #eee;
+}
+
+.page-title-heading {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -412,7 +417,7 @@ fieldset {
   opacity: .6;
 }
 
-.catalog-sort-link:active{
+.catalog-sort-link:active {
   opacity: 1;
 }
 
@@ -424,7 +429,7 @@ fieldset {
   opacity: .12;
 }
 
-.product:hover::before{
+.product:hover::before {
   opacity: 1;
 }
 
