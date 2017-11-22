@@ -325,6 +325,16 @@ a {
   color: #283136;
 }
 
+.main-card {
+  background: url("../img/img-map.png") no-repeat;
+  background-size: 100%;
+  height: 416px;
+}
+
+.write-us {
+  padding: 55px 50px 50px;
+}
+
 .write-us > strong {
   font-size: 18px;
   line-height: 30px;
