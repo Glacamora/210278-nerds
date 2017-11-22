@@ -12,6 +12,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .main-offers-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -35,15 +41,34 @@ a {
   border: 0;
 }
 
+.main-menu-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 10px 20px;
+}
+
+.main-menu {
+  display: flex;
+  flex-grow: 1;
+}
+
 .main-menu-link {
   font-weight: 500;
   line-height: 30px;
   color: #000;
   text-transform: uppercase;
+  padding: 5px 23px;
 }
 
 .main-menu-list {
   list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin-top: 75px;
+}
+
+.main-menu-item {
+  padding: 0;
 }
 
 .main-menu-link-active,
@@ -67,6 +92,15 @@ a {
   opacity: .3;
 }
 
+.main-menu-link-active {
+  padding: 5px 23px;
+}
+
+.logo {
+  margin-top: 50px;
+  margin-right: 176px;
+}
+
 .logo-active:hover,
 .logo-active:focus {
   opacity: .8;
@@ -76,17 +110,43 @@ a {
   opacity: .3;
 }
 
+.cart {
+  display: block;
+  padding: 0 0 0 41px;
+  position: relative;
+}
+
+.main-menu-item-cart {
+  padding: 0;
+}
+
+.menu-list-cart {
+  margin-left: 221px;
+}
+
 .cart::before {
   content: "";
   display: block;
-  background-image: url("../img/cart-icon.svg");
-  background-repeat: no-repeat;
+  background: url("../img/cart-icon.svg") no-repeat;
   width: 15px;
   height: 15px;
+  position: absolute;
+  left: 0;
+  top: 22%;
 }
 
 .main-slider {
   background-color: #eee;
+  margin-bottom: 80px;
+}
+
+.main-slider-wrapper {
+  display: flex;
+}
+
+.main-slider-text-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-slider-title {
@@ -99,8 +159,23 @@ a {
   color: #283136;
 }
 
+.main-slider_image {
+  padding-right: 35px;
+}
+
+.main-offers {
+  display: flex;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eee;
+}
+
+.main-offers-product {
+  padding-right: 100px;
+}
+
 .btn-slider {
   background-color: #fb565a;
+  width: 240px;
 }
 
 .btn-slider:hover,
@@ -185,10 +260,29 @@ a {
   box-shadow: 0 3px 0 0 rgba(0,0,0,0.1) inset;
 }
 
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 73px;
+  border-bottom: 2px solid #eee;
+}
+
+.about-resume {
+  width: 680px;
+  padding-top: 80px;
+}
+
+.about-advantages {
+  width: 360px;
+  padding-top: 43px;
+}
+
 .about-resume > b {
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
 }
+
 .about-resume > p {
   color: #283136;
 }
@@ -204,7 +298,7 @@ a {
 }
 
 .advantages-table {
-  width: 453px;
+  width: 360px;
 }
 
 .advantages-title {
@@ -248,6 +342,13 @@ a {
   color: #fff;
   font-size: 16px;
   background-color: #fb565a;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 70px 20px;
 }
 
 .footer-text > b {
@@ -294,6 +395,17 @@ a {
   font-size: 16px;
   font-weight: 200;
   background-color: #fb565a;
+}
+
+.main-logo-partners-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #eee;
+  margin: 0 0 80px;
+  min-height: 180px;
+  align-items: center;
+  padding: 0;
 }
 
 .main-logo-partners-img {
@@ -344,10 +456,26 @@ a {
   background-color: #eee;
 }
 
+.page-title-wrapper {
+  padding: 63px 20px 106px 20px;
+}
+
 .page-title-heading {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+
+.main-catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 20px 62px 20px;
+}
+
+.catalog-filter {
+  max-width: 260px;
 }
 
 .catalog-filter-title {
@@ -355,6 +483,12 @@ a {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.catalog-sort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 49px;
 }
 
 .catalog-sort > span {
@@ -390,6 +524,8 @@ a {
 
 fieldset {
   border: 0;
+  padding: 0;
+  margin: 0 0 54px;
 }
 
 .catalog-filter-label {
@@ -419,6 +555,18 @@ fieldset {
 
 .catalog-sort-link:active {
   opacity: 1;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 760px;
+  margin-bottom: 29px;
+}
+
+.product {
+  margin-bottom: 33px;
 }
 
 .product::before{
@@ -474,12 +622,20 @@ fieldset {
 
 .social-links {
   display: flex;
+  list-style-type: none;
+  padding: 0;
+  width: 260px;
+  padding-right: 140px;
+}
+
+.social-links > li:nth-child(-n+2) {
+  padding-right: 10px;
 }
 
 .social-icon {
+  display: block;
   background-color: #e1e1e1;
   border-radius: 50%;
-  display: block;
 }
 
 .social-icon:hover,
@@ -528,12 +684,4 @@ fieldset {
 
 .social-icon-insta:active::after {
   opacity: .3;
-}
-
-/*Накидала чтобы удобней было смотреть*/
-.product-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 800px;
 }

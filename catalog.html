@@ -9,177 +9,187 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-menu">
-        <a href="index.html" class="logo logo-active">
-          <img src="img/nerds-logo.svg" width="100" height="50" alt="Нёрдс">
+      <div class="main-menu-container container">
+        <a class="logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
         </a>
-        <ul>
-          <li class="main-menu-item">
-            <a href="#" class="main-menu-link">Студия</a>
-          </li>
-          <li class="main-menu-item">
-            <a href="#" class="main-menu-link">Клиенты</a>
-          </li>
-          <li class="main-menu-item">
-            <a class="main-menu-link-active">Магазин</a>
-          </li>
-          <li class="main-menu-item">
-            <a href="#" class="main-menu-link">Контакты</a>
-          </li>
-        </ul>
-        <a href="#" class="cart">Корзина</a>
-      </nav>
+        <nav class="main-menu">
+              <ul class="main-menu-list">
+                <li class="main-menu-item">
+                  <a href="#" class="main-menu-link">Студия</a>
+                </li>
+                <li class="main-menu-item">
+                  <a href="#" class="main-menu-link">Клиенты</a>
+                </li>
+                <li class="main-menu-item">
+                  <a class="main-menu-link-active">Магазин</a>
+                </li>
+                <li class="main-menu-item">
+                  <a href="#" class="main-menu-link">Контакты</a>
+                </li>
+              </ul>
+              <ul class="main-menu-list menu-list-cart">
+                <li class="main-menu-item main-menu-item-cart">
+                  <a href="#" class="cart">Корзина</a>
+                </li>
+              </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="page-title">
-        <h1 class="page-title-heading">Магазин готовых шаблонов</h1>
+        <div class="page-title-wrapper container">
+          <h1 class="page-title-heading">Магазин готовых шаблонов</h1>
+        </div>
       </section>
-      <section class="catalog-filter">
-        <form action="#" method="post">
-          <fieldset class="catalog-filter-price-control">
-            <legend class="catalog-filter-title">Стоимость:</legend>
-            <div class="catalog-filter-price-slider">
+      <div class="main-catalog-wrapper container">
+        <section class="catalog-filter">
+          <form action="#" method="post">
+            <fieldset class="catalog-filter-price-control">
+              <legend class="catalog-filter-title">Стоимость:</legend>
+              <div class="catalog-filter-price-slider">
+                <div>
+                  <div></div>
+                </div>
+                <div class="price-toggles price-toggle-min">
+                </div>
+                <div class="price-toggles price-toggle-max">
+                </div>
+              </div>
+              <div class="catalog-filter-price-form">
+                <span>от</span>
+                <input class="min-price" type="text" value="0">
+                <span>до</span>
+                <input class="max-price" type="text" value="15000">
+              </div>
+            </fieldset>
+              <fieldset class="catalog-filter-grid">
+                <legend class="catalog-filter-title">Сетка:</legend>
+                <p>
+                  <input type="radio" id="grid_1" name="grid" checked>
+                  <label for="grid_1" class="catalog-filter-label">
+                    Адаптивная
+                  </label>
+                </p>
+                <p>
+                  <input type="radio" id="grid_2" name="grid">
+                  <label for="grid_2" class="catalog-filter-label">
+                    Фиксированная
+                  </label>
+                </p>
+                <p>
+                  <input type="radio" id="grid_3" name="grid">
+                  <label for="grid_3" class="catalog-filter-label">
+                    Резиновая
+                  </label>
+                </p>
+              </fieldset>
+              <fieldset class="catalog-filter-features">
+                <legend class="catalog-filter-title">Особенности:</legend>
+                <p>
+                  <input type="checkbox" id="checkbox_1" checked>
+                  <label for="checkbox_1" class="catalog-filter-label">
+                    Слайдер
+                  </label>
+                </p>
+                <p>
+                  <input type="checkbox" id="checkbox_2">
+                  <label for="checkbox_2" class="catalog-filter-label">
+                    Блок преимуществ
+                  </label>
+                </p>
+                <p>
+                  <input type="checkbox" id="checkbox_3" checked>
+                  <label for="checkbox_3" class="catalog-filter-label">
+                    Новости
+                  </label>
+                </p>
+                <p>
+                  <input type="checkbox" id="checkbox_4">
+                  <label for="checkbox_4" class="catalog-filter-label">
+                    Галерея
+                  </label>
+                </p>
+                <p>
+                  <input type="checkbox" id="checkbox_5" checked>
+                  <label for="checkbox_5" class="catalog-filter-label">
+                    Корзина
+                  </label>
+                </p>
+              </fieldset>
               <div>
-                <div></div>
+                <button type="submit" class="btn btn-form">Показать</button>
               </div>
-              <div class="price-toggles price-toggle-min">
-              </div>
-              <div class="price-toggles price-toggle-max">
-              </div>
-            </div>
-            <div class="catalog-filter-price-form">
-              <span>от</span>
-              <input class="min-price" type="text" value="0">
-              <span>до</span>
-              <input class="max-price" type="text" value="15000">
-            </div>
-          </fieldset>
-            <fieldset class="catalog-filter-grid">
-              <legend class="catalog-filter-title">Сетка:</legend>
-              <p>
-                <input type="radio" id="grid_1" name="grid" checked>
-                <label for="grid_1" class="catalog-filter-label">
-                  Адаптивная
-                </label>
-              </p>
-              <p>
-                <input type="radio" id="grid_2" name="grid">
-                <label for="grid_2" class="catalog-filter-label">
-                  Фиксированная
-                </label>
-              </p>
-              <p>
-                <input type="radio" id="grid_3" name="grid">
-                <label for="grid_3" class="catalog-filter-label">
-                  Резиновая
-                </label>
-              </p>
-            </fieldset>
-            <fieldset class="catalog-filter-features">
-              <legend class="catalog-filter-title">Особенности:</legend>
-              <p>
-                <input type="checkbox" id="checkbox_1" checked>
-                <label for="checkbox_1" class="catalog-filter-label">
-                  Слайдер
-                </label>
-              </p>
-              <p>
-                <input type="checkbox" id="checkbox_2">
-                <label for="checkbox_2" class="catalog-filter-label">
-                  Блок преимуществ
-                </label>
-              </p>
-              <p>
-                <input type="checkbox" id="checkbox_3" checked>
-                <label for="checkbox_3" class="catalog-filter-label">
-                  Новости
-                </label>
-              </p>
-              <p>
-                <input type="checkbox" id="checkbox_4">
-                <label for="checkbox_4" class="catalog-filter-label">
-                  Галерея
-                </label>
-              </p>
-              <p>
-                <input type="checkbox" id="checkbox_5" checked>
-                <label for="checkbox_5" class="catalog-filter-label">
-                  Корзина
-                </label>
-              </p>
-            </fieldset>
+          </form>
+        </section>
+        <section>
+          <div class="catalog-sort">
+            <span>Сортировать:</span>
             <div>
-              <button type="submit" class="btn btn-form">Показать</button>
-            </div>
-        </form>
-      </section>
-      <div>
-        <div class="catalog-sort">
-          <span>Сортировать:</span>
-          <div>
-            <a href="#" class="catalog-sort-link">По цене</a>
-            <a href="#" class="catalog-sort-link">По типу</a>
-            <a href="#" class="catalog-sort-link">По названию</a>
-            <a href="#" class="catalog-sort-link" aria-label="По убыванию"></a>
-            <a href="#" class="catalog-sort-link" aria-label="По возрастанию"></a>
-          </div>
-        </div>
-        <div class="product-list">
-          <div class="product">
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Седона">
-            <div class="product-info">
-              <span>Sedona</span>
-              <p>Информационный сайт для туристов</p>
-              <a href="#" class="btn btn-price">9900 руб.</a>
+              <a href="#" class="catalog-sort-link">По цене</a>
+              <a href="#" class="catalog-sort-link">По типу</a>
+              <a href="#" class="catalog-sort-link">По названию</a>
+              <a href="#" class="catalog-sort-link" aria-label="По убыванию"></a>
+              <a href="#" class="catalog-sort-link" aria-label="По возрастанию"></a>
             </div>
           </div>
-          <div class="product">
-            <img src="img/img-pink.jpg" width="360" height="576" alt="Пинк">
-            <div class="product-info">
-              <span>Pink</span>
-              <p>Информационный сайт для туристов</p>
-              <a href="#" class="btn btn-price">9900 руб.</a>
+          <div class="product-list">
+            <div class="product">
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Седона">
+              <div class="product-info">
+                <span>Sedona</span>
+                <p>Информационный сайт для туристов</p>
+                <a href="#" class="btn btn-price">9900 руб.</a>
+              </div>
+            </div>
+            <div class="product">
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Пинк">
+              <div class="product-info">
+                <span>Pink</span>
+                <p>Информационный сайт для туристов</p>
+                <a href="#" class="btn btn-price">9900 руб.</a>
+              </div>
+            </div>
+            <div class="product">
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский">
+              <div class="product-info">
+                <span>Barbershop</span>
+                <p>Информационный сайт для туристов</p>
+                <a href="#" class="btn btn-price">9900 руб.</a>
+              </div>
+            </div>
+            <div class="product">
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="Мишка">
+              <div class="product-info">
+                <span>Mishka</span>
+                <p>Информационный сайт для туристов</p>
+                <a href="#" class="btn btn-price">9900 руб.</a>
+              </div>
+            </div>
+            <div class="product">
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="А Плюс">
+              <div class="product-info">
+                <span>Aplus</span>
+                <p>Информационный сайт для туристов</p>
+                <a href="#" class="btn btn-price">9900 руб.</a>
+              </div>
+            </div>
+            <div class="product">
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
+              <div class="product-info">
+                <span>Kvast</span>
+                <p>Информационный сайт для туристов</p>
+                <a href="#" class="btn btn-price">9900 руб.</a>
+              </div>
             </div>
           </div>
-          <div class="product">
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский">
-            <div class="product-info">
-              <span>Barbershop</span>
-              <p>Информационный сайт для туристов</p>
-              <a href="#" class="btn btn-price">9900 руб.</a>
-            </div>
+          <div class="product-page-number">
+            <a>1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Следующая</a>
           </div>
-          <div class="product">
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Мишка">
-            <div class="product-info">
-              <span>Mishka</span>
-              <p>Информационный сайт для туристов</p>
-              <a href="#" class="btn btn-price">9900 руб.</a>
-            </div>
-          </div>
-          <div class="product">
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="А Плюс">
-            <div class="product-info">
-              <span>Aplus</span>
-              <p>Информационный сайт для туристов</p>
-              <a href="#" class="btn btn-price">9900 руб.</a>
-            </div>
-          </div>
-          <div class="product">
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
-            <div class="product-info">
-              <span>Kvast</span>
-              <p>Информационный сайт для туристов</p>
-              <a href="#" class="btn btn-price">9900 руб.</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-page-number">
-          <a>1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">Следующая</a>
-        </div>
+        </section>
       </div>
       <div>
         <div class="main-card">
@@ -195,21 +205,23 @@
       </div>
     </main>
     <footer>
-      <ul class="social-links">
-        <li>
-          <a href="#" class="social-icon social-icon-vk" aria-label="Вконтакте"></a>
-        </li>
-        <li>
-          <a href="#" class="social-icon social-icon-fb" aria-label="Фэйсбук"></a>
-        </li>
-        <li>
-          <a href="#" class="social-icon social-icon-insta" aria-label="Инстаграм"></a>
-        </li>
-      </ul>
-      <div class="footer-text">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для социальных сетей.</p>
-      </div>
+      <div class="footer-wrapper container">
+        <ul class="social-links">
+          <li>
+            <a href="#" class="social-icon social-icon-vk" aria-label="Вконтакте"></a>
+          </li>
+          <li>
+            <a href="#" class="social-icon social-icon-fb" aria-label="Фэйсбук"></a>
+          </li>
+          <li>
+            <a href="#" class="social-icon social-icon-insta" aria-label="Инстаграм"></a>
+          </li>
+        </ul>
+        <div class="footer-text">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для социальных сетей.</p>
+        </div>
+    </div>
     </footer>
     <div class="popup">
       <button class="popup-close-btn" type="button" title="Закрыть"></button>
