@@ -55,32 +55,32 @@
                   <div class="price-toggles price-toggle-max"></div>
               </div>
               <div class="catalog-filter-price-form">
-                <div>
+                <p>
                   <label for="min-price">от</label>
-                  <input class="min-price" type="number" value="0">
-                </div>
-                <div>
+                  <input class="min-price" type="number" min="0" value="0">
+                </p>
+                <p>
                   <label for="max-price">до</label>
                   <input class="max-price" type="number" value="15000">
-                </div>
+                </p>
               </div>
             </fieldset>
               <fieldset class="catalog-filter-grid">
                 <legend class="catalog-filter-title">Сетка:</legend>
-                <p>
+                <p class="catalog-filter-text">
                   <input type="radio" id="grid_1" name="grid" class="catalog-filter-input-radio" checked>
                   <label for="grid_1" class="catalog-filter-label catalog-filter-label-radio">
                     Адаптивная
                   </label>
                 </p>
-                <p>
+                <p class="catalog-filter-text">
                   <input type="radio" id="grid_2" name="grid" class="catalog-filter-input-radio">
                   <label for="grid_2" class="catalog-filter-label catalog-filter-label-radio">
                     Фиксированная
                   </label>
                 </p>
-                <p>
-                  <input type="radio" id="grid_3" name="grid" class="catalog-filter-input-radio" disabled>
+                <p class="catalog-filter-text">
+                  <input type="radio" id="grid_3" name="grid" class="catalog-filter-input-radio">
                   <label for="grid_3" class="catalog-filter-label catalog-filter-label-radio">
                     Резиновая
                   </label>
@@ -88,31 +88,31 @@
               </fieldset>
               <fieldset class="catalog-filter-features">
                 <legend class="catalog-filter-title">Особенности:</legend>
-                <p>
+                <p class="catalog-filter-text">
                   <input type="checkbox" id="checkbox_1" class="catalog-filter-input-checkbox" checked>
                   <label for="checkbox_1" class="catalog-filter-label catalog-filter-lable-checkbox">
                     Слайдер
                   </label>
                 </p>
-                <p>
+                <p class="catalog-filter-text">
                   <input type="checkbox" id="checkbox_2" class="catalog-filter-input-checkbox">
                   <label for="checkbox_2" class="catalog-filter-label catalog-filter-lable-checkbox">
                     Блок преимуществ
                   </label>
                 </p>
-                <p>
+                <p class="catalog-filter-text">
                   <input type="checkbox" id="checkbox_3" class="catalog-filter-input-checkbox" checked>
                   <label for="checkbox_3" class="catalog-filter-label catalog-filter-lable-checkbox">
                     Новости
                   </label>
                 </p>
-                <p>
-                  <input type="checkbox" id="checkbox_4" class="catalog-filter-input-checkbox" disabled>
+                <p class="catalog-filter-text">
+                  <input type="checkbox" id="checkbox_4" class="catalog-filter-input-checkbox">
                   <label for="checkbox_4" class="catalog-filter-label catalog-filter-lable-checkbox">
                     Галерея
                   </label>
                 </p>
-                <p>
+                <p class="catalog-filter-text">
                   <input type="checkbox" id="checkbox_5" class="catalog-filter-input-checkbox" checked>
                   <label for="checkbox_5" class="catalog-filter-label catalog-filter-lable-checkbox">
                     Корзина
@@ -125,6 +125,7 @@
           </form>
         </section>
         <section class="catalog">
+          <h2 class="visually-hidden">Наши товары</h2>
           <div class="catalog-sort">
             <span>Сортировать:</span>
             <div>
@@ -139,23 +140,23 @@
             <div class="product">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Седона">
               <div class="product-info">
-                <span>Sedona</span>
-                <p>Информационный сайт для туристов</p>
+                <h3>Sedona</h3>
+                <p>Информационный сайт<br>для туристов</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
             </div>
             <div class="product">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Пинк">
               <div class="product-info">
-                <span>Pink</span>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <h3>Pink</h3>
+                <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
             </div>
             <div class="product">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский">
               <div class="product-info">
-                <span>Barbershop</span>
+                <h3>Barbershop</h3>
                 <p>Сайт салоны красоты. Для мужчин, да.</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
@@ -163,7 +164,7 @@
             <div class="product">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Мишка">
               <div class="product-info">
-                <span>Mishka</span>
+                <h3>Mishka</h3>
                 <p>Интернет-магазин  вязаных игрушек</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
@@ -171,7 +172,7 @@
             <div class="product">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="А Плюс">
               <div class="product-info">
-                <span>Aplus</span>
+                <h3>Aplus</h3>
                 <p>Лендинг курсов повышения кваливикации</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
@@ -179,7 +180,7 @@
             <div class="product">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
               <div class="product-info">
-                <span>Kvast</span>
+                <h3>Kvast</h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
@@ -189,12 +190,14 @@
             <a class="product-page-number-active" active>1</a>
             <a href="#">2</a>
             <a href="#">3</a>
-            <a href="#">Следующая</a>
+            <a href="#" class="product-page-number-next">Следующая</a>
           </div>
         </section>
         </div>
         <section class="main-card">
-          <div class="container">
+          <div class="container container-map">
+            <img src="img/img-map.png" alt="Нёрдс-дизайн студия. Адрес: Санкт-Петербург,
+             ул. Б. Конюшенная, д. 19/8">
             <div class="write-us">
               <strong>Nёrds design studio</strong>
               <p class="">191186, Санкт-Петербург,<br>
