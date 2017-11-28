@@ -398,13 +398,6 @@ p.about-list-title {
   color: #283136;
 }
 
-.main-card {
-/*  background: url("../img/img-map.png") no-repeat center;
-  position: relative;
-  background-size: cover;
-  min-height: 416px;*/
-}
-
 .container-map > img {
   position: absolute;
   left: 50%;
@@ -421,7 +414,6 @@ p.about-list-title {
 
 .write-us {
   padding: 55px 50px 50px;
-  /*top: 45px;*/
   width: 220px;
   background-color: #fff;
 }
@@ -636,6 +628,7 @@ textarea.popup-input {
 .popup-input:focus {
   border: 2px solid #000;
   opacity: 1;
+  outline: none;
 }
 
 .popup-input:invalid {
@@ -859,7 +852,6 @@ fieldset {
   opacity: 1;
 }
 
-/*Как тут?*/
 .catalog-filter-label:disabled {
   color: #eee;
 }
@@ -941,30 +933,14 @@ fieldset > p {
   opacity: 1;
 }
 
-/*.catalog-sort-filter-down,
-.catalog-sort-filter-up {
-  position: relative;
-}*/
-
 .catalog-sort-filter-down {
   display: block;
   background: url("../img/icon-down-dir.svg") no-repeat center / 11px 10px;
-  /*top: -7px;*/
   width: 32px;
   height: 32px;
   margin-top: -7px;
   margin-right: -25px;
 }
-
-/*.catalog-sort-filter-down::after {
-  content: "";
-  display: block;
-  background: url("../img/icon-down-dir.svg") no-repeat;
-  position: absolute;
-  top: 3px;
-  width: 11px;
-  height: 10px;
-}*/
 
 .catalog-sort-link-active,
 .catalog-sort-filter-down:active {
@@ -974,23 +950,11 @@ fieldset > p {
 .catalog-sort-filter-up {
   display: block;
   background: url("../img/icon-up-dir.svg") no-repeat center / 11px 10px;
-  /* top: -7px; */
   width: 32px;
   height: 32px;
   margin-top: -7px;
   margin-right: -9px;
 }
-
-/*.catalog-sort-filter-up::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: url("../img/icon-up-dir.svg") no-repeat;
-  top: 3px;
-  right: 0;
-  width: 11px;
-  height: 10px;
-}*/
 
 .product-list {
   display: flex;
@@ -1011,7 +975,7 @@ fieldset > p {
   display: block;
 }
 
-.product::before{
+.product::before {
   content: "";
   display: block;
   background: url("../img/browser.svg") no-repeat;
