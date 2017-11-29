@@ -400,6 +400,7 @@ a {
   text-transform: uppercase;
   color: #000;
   margin-top: 39px;
+  margin-bottom: 0;
 }
 
 .about-list {
@@ -514,8 +515,9 @@ a {
 }
 
 .btn-form span,
-.write-us-button span {
-	position:relative;
+.write-us-button span,
+.popup-send-btn span {
+	position: relative;
 }
 
 .write-us-button {
@@ -552,7 +554,7 @@ a {
   background-color: transparent;
   position: absolute;
   right: 90px;
-  top: 89px;
+  top: 84px;
   width: 21px;
   height: 21px;
   font-size: 0;
@@ -575,13 +577,10 @@ a {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  margin: 0 0 45px;
+  margin: 0 0 41px;
 }
 
 .popup-send-btn {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 200;
   background-color: #fb565a;
   padding: 16px 88px;
 }
@@ -650,11 +649,11 @@ a {
   position: fixed;
   background-color: #fff;
   box-shadow: 0 20px 40px 0 rgba(0,1,1,.75);
-  padding: 72px 100px 82px;
+  padding: 68px 95px 82px;
   left: 50%;
   top: 50%;
   width: 770px;
-  height: 434px;
+  height: 440px;
   transform: translate(-50%,-50%);
   z-index: 5;
 }
@@ -663,12 +662,22 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-height: 352px;
 }
 
-.popup-form-paragraph {
+.popup-form-name,
+.popup-form-mail {
   flex-basis: 360px;
   display: block;
   margin: 0;
+  margin-bottom: 30px;
+}
+
+.popup-form-text {
+  flex-basis: 770px;
+  margin: 0;
+  max-height: 145px;
+  margin-bottom: 47px;
 }
 
 .popup-text {
@@ -676,25 +685,21 @@ a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
 .popup-input {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   border: 2px solid #d7dcde;
-  font-size: 16px;
   line-height: 18px;
   opacity: .5;
   box-sizing: border-box;
   width: 100%;
-  height: 50px;
-  margin-bottom: 47px;
   padding: 14px;
 }
 
 textarea.popup-input {
   height: 118px;
-  width: 760px;
 }
 
 .popup-input:hover {
@@ -808,7 +813,9 @@ textarea.popup-input {
   margin: 0 0 54px;
 }
 
-fieldset {
+.catalog-filter-price-control,
+.catalog-filter-grid,
+.catalog-filter-features {
   border: 0;
   padding: 0;
 }
@@ -819,6 +826,7 @@ fieldset {
   border-radius: 2px;
   width: 100%;
   height: 80px;
+  width: 260px;
   margin-bottom: 14px;
 }
 
@@ -875,7 +883,7 @@ fieldset {
   font-weight: 400;
   color: #283136;
   background-color: #eee;
-  border-radius: 2px;
+  border-radius: 3px;
   border: 0;
   padding: 9px 5px;
   padding-left: 16px;
@@ -972,7 +980,7 @@ fieldset {
 }
 
 .catalog-filter-grid {
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 
 .catalog-filter-text {
@@ -1004,6 +1012,10 @@ fieldset {
   color: #000;
   text-transform: uppercase;
   opacity: .3;
+}
+
+.catalog-sort-link-name {
+  padding-right: 11px;
 }
 
 .catalog-sort-link:hover,
@@ -1103,13 +1115,13 @@ fieldset {
   margin-bottom: 28px;
 }
 
-.product-page-number {
+.product-pagination {
   display: flex;
   margin-top: 46px;
   flex-wrap: wrap;
 }
 
-.product-page-number > a {
+.product-pagination-item {
   display: inline-block;
   vertical-align: top;
   font-weight: 500;
@@ -1124,37 +1136,37 @@ fieldset {
   margin-top: 11px;
   line-height: 18px;
   border-radius: 2px;
-  padding: 13px 13px;
-  cursor: pointer;
+  padding: 13px;
 }
 
-a.product-page-number-active,
-a.product-page-number-active:active,
-a.product-page-number-active:hover {
+.product-pagination-active,
+.product-pagination-active:active,
+.product-pagination-active:hover {
   background-color: transparent;
-  border: 3px solid #dbdbdb;
+  border-color: #dbdbdb;
 }
 
-a.product-page-number-next {
-  padding: 13px 77px;
+.product-pagination-item-text {
+  padding-right: 77px;
+  padding-left: 77px;
 }
 
-.product-page-number > a:hover,
-.product-page-number > a:focus {
+.product-pagination-item:not(.product-pagination-active):hover,
+.product-pagination-item:focus {
   background-color: #dfdfdf;
   border-color: #dfdfdf;
 }
 
-.product-page-number > a:active{
+.product-pagination-item:not(.product-pagination-active):active {
   background-color: #d5d5d5;
   color: #959595;
-  border: 0;
+  border-width: 0;
+  padding: 16px;
   box-shadow: 0 3px 0 0 rgba(0,0,0,.1) inset;
-  line-height: 23px;
 }
 
-a.product-page-number-next:active {
-  padding: 13px 80px;
+.product-pagination-item-text:not(.product-pagination-active):active {
+  padding: 16px 80px;
 }
 
 .social-links {

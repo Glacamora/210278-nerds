@@ -131,7 +131,7 @@
             <div class="catalog-sort-categories">
               <a href="#" class="catalog-sort-link catalog-sort-link-active">По цене</a>
               <a href="#" class="catalog-sort-link">По типу</a>
-              <a href="#" class="catalog-sort-link">По названию</a>
+              <a href="#" class="catalog-sort-link catalog-sort-link-name">По названию</a>
               <a href="#" class="catalog-sort-link catalog-sort-filter-down catalog-sort-link-active" aria-label="По убыванию"></a>
               <a href="#" class="catalog-sort-link catalog-sort-filter-up" aria-label="По возрастанию"></a>
             </div>
@@ -186,11 +186,11 @@
               </div>
             </div>
           </div>
-          <div class="product-page-number">
-            <a class="product-page-number-active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#" class="product-page-number-next">Следующая</a>
+          <div class="product-pagination">
+            <a class="product-pagination-item product-pagination-active">1</a>
+            <a class="product-pagination-item" href="#">2</a>
+            <a class="product-pagination-item" href="#">3</a>
+            <a href="#" class="product-pagination-item product-pagination-item-text">Следующая</a>
           </div>
         </section>
         </div>
@@ -231,19 +231,19 @@
       <b>Напишите нам</b>
       <button class="popup-close-btn" type="button" title="Закрыть"></button>
       <form action="#" class="popup-form" method="post">
-          <p class="popup-form-paragraph">
+          <p class="popup-form-name">
             <label for="name" class="popup-text">Ваше имя:</label>
             <input class="popup-input" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
           </p>
-          <p class="popup-form-paragraph">
+          <p class="popup-form-mail">
             <label for="email" class="popup-text">Ваш e-mail:</label>
             <input class="popup-input" type="email" id="email" name="email" placeholder="Для отправки ответа">
           </p>
-          <p class="popup-form-paragraph">
+          <p class="popup-form-text">
             <label for="text" class="popup-text">Текст письма:</label>
             <textarea class="popup-input" name="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
           </p>
-        <button class="btn popup-send-btn" type="submit">Отправить</button>
+        <button class="btn popup-send-btn" type="submit"><span>Отправить</span></button>
       </form>
     </div>
   </body>
