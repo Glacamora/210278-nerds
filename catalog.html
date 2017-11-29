@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -113,14 +113,14 @@
                   </label>
                 </p>
                 <p class="catalog-filter-text">
-                  <input type="checkbox" id="checkbox_5" class="catalog-filter-input-checkbox" checked>
+                  <input type="checkbox" id="checkbox_5" class="catalog-filter-input-checkbox">
                   <label for="checkbox_5" class="catalog-filter-label catalog-filter-lable-checkbox">
                     Корзина
                   </label>
                 </p>
               </fieldset>
               <div>
-                <button type="submit" class="btn btn-form">Показать</button>
+                <button type="submit" class="btn btn-form"><span>Показать</span></button>
               </div>
           </form>
         </section>
@@ -128,7 +128,7 @@
           <h2 class="visually-hidden">Наши товары</h2>
           <div class="catalog-sort">
             <span>Сортировать:</span>
-            <div>
+            <div class="catalog-sort-categories">
               <a href="#" class="catalog-sort-link catalog-sort-link-active">По цене</a>
               <a href="#" class="catalog-sort-link">По типу</a>
               <a href="#" class="catalog-sort-link">По названию</a>
@@ -200,10 +200,10 @@
              ул. Б. Конюшенная, д. 19/8">
             <div class="write-us">
               <strong>Nёrds design studio</strong>
-              <p class="">191186, Санкт-Петербург,<br>
+              <p>191186, Санкт-Петербург,<br>
                ул. Б. Конюшенная, д. 19/8</p>
-              <p class="">тел. +7 (812) 275-75-75</p>
-              <button type="button" class="btn write-us-button">Напишите нам</button>
+              <p>тел. +7 (812) 275-75-75</p>
+              <button type="button" class="btn write-us-button"><span>Напишите нам</span></button>
             </div>
           </div>
         </section>
