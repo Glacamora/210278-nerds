@@ -932,16 +932,18 @@ a {
   opacity: .1;
 }
 
+.catalog-filter-input-radio:disabled + .catalog-filter-label,
+.catalog-filter-input-checkbox:disabled + .catalog-filter-label {
+  color: #eee;
+  cursor: default;
+}
+
 .catalog-filter-input-radio:focus + .catalog-filter-label-radio {
   color: #000;
 }
 
 .catalog-filter-input-radio:focus + .catalog-filter-label-radio::before {
   opacity: 1;
-}
-
-.catalog-filter-label:disabled {
-  color: #eee;
 }
 
 .catalog-filter-input-checkbox + .catalog-filter-lable-checkbox::before {
