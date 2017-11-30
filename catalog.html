@@ -15,22 +15,22 @@
         </a>
         <nav class="main-menu">
           <ul class="main-menu-list">
-            <li class="main-menu-item">
+            <li>
               <a href="#" class="main-menu-link">Студия</a>
             </li>
-            <li class="main-menu-item">
+            <li>
               <a href="#" class="main-menu-link">Клиенты</a>
             </li>
-            <li class="main-menu-item">
+            <li>
               <a class="main-menu-link-active">Магазин</a>
             </li>
-            <li class="main-menu-item">
+            <li>
               <a href="#" class="main-menu-link">Контакты</a>
             </li>
           </ul>
           <ul class="main-menu-list menu-list-cart">
-            <li class="main-menu-item main-menu-item-cart">
-              <a href="#" class="cart">Корзина</a>
+            <li>
+              <a href="#" class="main-cart">Корзина</a>
             </li>
           </ul>
         </nav>
@@ -50,9 +50,9 @@
               <div class="catalog-filter-price-slider">
                 <div class="slider-scale">
                   <div class="slider-scale-strip"></div>
-                  </div>
-                  <div class="price-toggles price-toggle-min"></div>
-                  <div class="price-toggles price-toggle-max"></div>
+                </div>
+                <div class="price-toggles price-toggle-min"></div>
+                <div class="price-toggles price-toggle-max"></div>
               </div>
               <div class="catalog-filter-price-form">
                 <p>
@@ -61,7 +61,7 @@
                 </p>
                 <p>
                   <label for="max-price">до</label>
-                  <input type="number" id="max-price" value="15000" class="max-price">
+                  <input type="number" id="max-price" min="0" value="15000" class="max-price">
                 </p>
               </div>
             </fieldset>
@@ -141,7 +141,8 @@
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Седона">
               <div class="product-info">
                 <h3>Sedona</h3>
-                <p>Информационный сайт<br>для туристов</p>
+                <p>Информационный сайт<br>
+                  для туристов</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
             </div>
@@ -149,7 +150,8 @@
               <img src="img/img-pink.jpg" width="360" height="576" alt="Пинк">
               <div class="product-info">
                 <h3>Pink</h3>
-                <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+                <p>Продуктовый лендинг<br>
+                  приложения для iOS и Android</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
             </div>
@@ -165,7 +167,7 @@
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Мишка">
               <div class="product-info">
                 <h3>Mishka</h3>
-                <p>Интернет-магазин  вязаных игрушек</p>
+                <p>Интернет-магазин вязаных игрушек</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
             </div>
@@ -231,18 +233,18 @@
       <b>Напишите нам</b>
       <button class="popup-close-btn" type="button" title="Закрыть"></button>
       <form action="#" class="popup-form" method="post">
-          <p class="popup-form-name">
-            <label for="name" class="popup-text">Ваше имя:</label>
-            <input class="popup-input" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
-          </p>
-          <p class="popup-form-mail">
-            <label for="email" class="popup-text">Ваш e-mail:</label>
-            <input class="popup-input" type="email" id="email" name="email" placeholder="Для отправки ответа">
-          </p>
-          <p class="popup-form-text">
-            <label for="text" class="popup-text">Текст письма:</label>
-            <textarea class="popup-input" name="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
-          </p>
+        <p class="popup-form-name">
+          <label for="name" class="popup-text">Ваше имя:</label>
+          <input class="popup-input" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p class="popup-form-mail">
+          <label for="email" class="popup-text">Ваш e-mail:</label>
+          <input class="popup-input" type="email" id="email" name="email" placeholder="Для отправки ответа">
+        </p>
+        <p class="popup-form-text">
+          <label for="text" class="popup-text">Текст письма:</label>
+          <textarea class="popup-textarea" name="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
         <button class="btn popup-send-btn" type="submit"><span>Отправить</span></button>
       </form>
     </div>

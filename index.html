@@ -15,22 +15,22 @@
         </a>
         <nav class="main-menu">
           <ul class="main-menu-list">
-            <li class="main-menu-item">
+            <li>
               <a href="#" class="main-menu-link">Студия</a>
             </li>
             <li class="main-menu-item">
               <a href="#" class="main-menu-link">Клиенты</a>
             </li>
-            <li class="main-menu-item">
+            <li>
               <a href="catalog.html" class="main-menu-link">Магазин</a>
             </li>
-            <li class="main-menu-item">
+            <li>
               <a href="#" class="main-menu-link">Контакты</a>
             </li>
           </ul>
           <ul class="main-menu-list menu-list-cart">
-            <li class="main-menu-item main-menu-item-cart">
-              <a href="#" class="cart">Корзина</a>
+            <li>
+              <a href="#" class="main-cart">Корзина</a>
             </li>
           </ul>
         </nav>
@@ -54,7 +54,7 @@
         <a href="#" class="btn btn-slider">Узнать больше</a>
       </div>-->
       <div class="main-slider-toggles">
-        <span class="main-slider-toggle main-slider1-toggle"></span>
+        <span class="main-slider-toggle main-slider-toggle-active"></span>
         <span class="main-slider-toggle"></span>
         <span class="main-slider-toggle"></span>
       </div>
@@ -182,18 +182,18 @@
       <b>Напишите нам</b>
       <button class="popup-close-btn" type="button" title="Закрыть"></button>
       <form action="#" class="popup-form" method="post">
-          <p class="popup-form-name">
-            <label for="name" class="popup-text">Ваше имя:</label>
-            <input class="popup-input" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
-          </p>
-          <p class="popup-form-mail">
-            <label for="email" class="popup-text">Ваш e-mail:</label>
-            <input class="popup-input" type="email" id="email" name="email" placeholder="Для отправки ответа">
-          </p>
-          <p class="popup-form-text">
-            <label for="text" class="popup-text">Текст письма:</label>
-            <textarea class="popup-input" name="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
-          </p>
+        <p class="popup-form-name">
+          <label for="name" class="popup-text">Ваше имя:</label>
+          <input class="popup-input" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p class="popup-form-mail">
+          <label for="email" class="popup-text">Ваш e-mail:</label>
+          <input class="popup-input" type="email" id="email" name="email" placeholder="Для отправки ответа">
+        </p>
+        <p class="popup-form-text">
+          <label for="text" class="popup-text">Текст письма:</label>
+          <textarea class="popup-textarea" name="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
         <button class="btn popup-send-btn" type="submit"><span>Отправить</span></button>
       </form>
     </div>
