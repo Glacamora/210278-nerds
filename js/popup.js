@@ -6,9 +6,9 @@ var eMail = popup.querySelector('[name=email]');
 var textArea = popup.querySelector('[name=text]');
 var storage = localStorage.getItem ("email")
 
-writeUsBtn.addEventListener('click', function(event) {
-event.preventDefault();
-popup.classList.add('popup-visible');
+  writeUsBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  popup.classList.add('popup-visible');
 
   if (storage) {
     email.value = storage;
@@ -27,38 +27,44 @@ popup.classList.add('popup-visible');
 
   form.addEventListener("submit", function(event) {
 
-if
-  (!email.value && !text.value) {
-  event.preventDefault();
-  popup.classList.add("popup-error");
-  console.log("Нужно ввести имейл и текст письма");
-}
+  if
+    (!email.value && !text.value) {
+    event.preventDefault();
+    popup.classList.remove("popup-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("popup-error");
+    console.log("Нужно ввести имейл и текст письма");
+  }
 
-if
-  (!text.value) {
-  event.preventDefault();
-  popup.classList.add("popup-error");
-  console.log("Нужно ввести текст письма");
-  text.focus()
-}
+  if
+    (!text.value) {
+    event.preventDefault();
+    popup.classList.remove("popup-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("popup-error");
+    console.log("Нужно ввести текст письма");
+    text.focus()
+  }
 
-if
-  (!email.value) {
-  event.preventDefault();
-  popup.classList.add("popup-error");
-  console.log("Нужно ввести имейл");
-  email.focus()
-}
+  if
+    (!email.value) {
+    event.preventDefault();
+    popup.classList.remove("popup-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("popup-error");
+    console.log("Нужно ввести имейл");
+    email.focus()
+  }
 
-else {
-  localStorage.setItem ("email", email.value);
-}
+  else {
+    localStorage.setItem ("email", email.value);
+  }
 });
 
-window.addEventListener("keydown", function (event) {
-if (event.keyCode === 27) {
-  if (popup.classList.contains("popup-visible")) {
-    popup.classList.remove("popup-visible");
+  window.addEventListener("keydown", function (event) {
+  if (event.keyCode === 27) {
+    if (popup.classList.contains("popup-visible")) {
+      popup.classList.remove("popup-visible");
+    }
   }
-}
 });
