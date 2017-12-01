@@ -471,12 +471,17 @@ a {
   overflow: hidden;
 }
 
-.container-map img {
+.container-map img,
+.container-map iframe {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
   z-index: -1;
+}
+
+.container-map img {
+  z-index: -2;
 }
 
 .container-map {
@@ -641,10 +646,6 @@ a {
 
 .popup {
   display: none;
-}
-
-.popup-visible {
-  /*display: block;*/
   position: fixed;
   background-color: #fff;
   box-shadow: 0 20px 40px 0 rgba(0,1,1,.75);
@@ -655,6 +656,56 @@ a {
   height: 440px;
   transform: translate(-50%,-50%);
   z-index: 5;
+  animation: bounce 0.6s;
+}
+
+.popup-visible {
+  display: block;
+}
+
+.popup-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(1000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .popup-form {
@@ -702,12 +753,14 @@ a {
   height: 118px;
 }
 
-.popup-input:hover {
+.popup-input:hover,
+.popup-textarea:hover {
   border: 2px solid #b4b9bb;
   opacity: .5;
 }
 
-.popup-input:focus {
+.popup-input:focus,
+.popup-textarea:focus {
   border: 2px solid #000;
   opacity: 1;
   outline: none;
@@ -1110,10 +1163,12 @@ a {
   display: block;
 }
 
-.product-info h3 {
+.product-info-name {
+  display: inline-block;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  color: #000;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 16px;

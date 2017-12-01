@@ -123,7 +123,7 @@
       <section class="main-logo-partners">
         <ul class="main-logo-partners-list">
           <li>
-            <a href="#" class="main-logo-partners-img">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-logo-partners-img">
               <img src="img/logo-html-academy.png" width="199" height="68" alt="HTML Academy">
             </a>
           </li>
@@ -146,17 +146,21 @@
       </section>
       </div>
       <section class="main-card">
-        <div class="container container-map">
+          <div class="container-map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad3116c543978b03118355b24db4be8ddc153bd0d444d6a5b9aecc1e9d5a094d7&amp;source=constructor"
+          width="100%" height="416" frameborder="0"></iframe>
           <img src="img/img-map.png" alt="Нёрдс-дизайн студия. Адрес: Санкт-Петербург,
-           ул. Б. Конюшенная, д. 19/8">
-          <div class="write-us">
-            <strong>Nёrds design studio</strong>
-            <p>191186, Санкт-Петербург,<br>
-             ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
-            <button type="button" class="btn write-us-button"><span>Напишите нам</span></button>
+          ул. Б. Конюшенная, д. 19/8">
+            <div class="container">
+              <div class="write-us">
+                <strong>Nёrds design studio</strong>
+                <p>191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8</p>
+                <p>тел. +7 (812) 275-75-75</p>
+                <button type="button" class="btn write-us-button"><span>Напишите нам</span></button>
+              </div>
+            </div>
           </div>
-        </div>
       </section>
     </main>
     <footer>
@@ -178,7 +182,7 @@
         </div>
       </div>
     </footer>
-    <div class="popup popup-visible">
+    <div class="popup">
       <b>Напишите нам</b>
       <button class="popup-close-btn" type="button" title="Закрыть"></button>
       <form action="#" class="popup-form" method="post">
@@ -197,5 +201,6 @@
         <button class="btn popup-send-btn" type="submit"><span>Отправить</span></button>
       </form>
     </div>
+    <script src="js/popup.js"></script>
   </body>
 </html>

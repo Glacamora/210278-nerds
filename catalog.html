@@ -140,7 +140,7 @@
             <div class="product">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Седона">
               <div class="product-info">
-                <h3>Sedona</h3>
+                <a href="#" class="product-info-name">Sedona</a>
                 <p>Информационный сайт<br>
                   для туристов</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
@@ -149,7 +149,7 @@
             <div class="product">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Пинк">
               <div class="product-info">
-                <h3>Pink</h3>
+                <a href="#" class="product-info-name">Pink</a>
                 <p>Продуктовый лендинг<br>
                   приложения для iOS и Android</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
@@ -158,7 +158,7 @@
             <div class="product">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский">
               <div class="product-info">
-                <h3>Barbershop</h3>
+                <a href="#" class="product-info-name">Barbershop</a>
                 <p>Сайт салоны красоты. Для мужчин, да.</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
@@ -166,7 +166,7 @@
             <div class="product">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Мишка">
               <div class="product-info">
-                <h3>Mishka</h3>
+                <a href="#" class="product-info-name">Mishka</a>
                 <p>Интернет-магазин вязаных игрушек</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
@@ -174,7 +174,7 @@
             <div class="product">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="А Плюс">
               <div class="product-info">
-                <h3>Aplus</h3>
+                <a href="#" class="product-info-name">Aplus</a>
                 <p>Лендинг курсов повышения кваливикации</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
@@ -182,7 +182,7 @@
             <div class="product">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
               <div class="product-info">
-                <h3>Kvast</h3>
+                <a href="#" class="product-info-name">Kvast</a>
                 <p>Промо-сайт производителя крафтового кваса</p>
                 <a href="#" class="btn btn-price">9900 руб.</a>
               </div>
@@ -197,17 +197,21 @@
         </section>
         </div>
         <section class="main-card">
-          <div class="container container-map">
+            <div class="container-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad3116c543978b03118355b24db4be8ddc153bd0d444d6a5b9aecc1e9d5a094d7&amp;source=constructor"
+            width="100%" height="416" frameborder="0"></iframe>
             <img src="img/img-map.png" alt="Нёрдс-дизайн студия. Адрес: Санкт-Петербург,
-             ул. Б. Конюшенная, д. 19/8">
-            <div class="write-us">
-              <strong>Nёrds design studio</strong>
-              <p>191186, Санкт-Петербург,<br>
-               ул. Б. Конюшенная, д. 19/8</p>
-              <p>тел. +7 (812) 275-75-75</p>
-              <button type="button" class="btn write-us-button"><span>Напишите нам</span></button>
+            ул. Б. Конюшенная, д. 19/8">
+              <div class="container">
+                <div class="write-us">
+                  <strong>Nёrds design studio</strong>
+                  <p>191186, Санкт-Петербург,<br>
+                  ул. Б. Конюшенная, д. 19/8</p>
+                  <p>тел. +7 (812) 275-75-75</p>
+                  <button type="button" class="btn write-us-button"><span>Напишите нам</span></button>
+                </div>
+              </div>
             </div>
-          </div>
         </section>
       </main>
     <footer>
@@ -229,7 +233,7 @@
         </div>
       </div>
     </footer>
-    <div class="popup popup-visible">
+    <div class="popup">
       <b>Напишите нам</b>
       <button class="popup-close-btn" type="button" title="Закрыть"></button>
       <form action="#" class="popup-form" method="post">
@@ -248,5 +252,6 @@
         <button class="btn popup-send-btn" type="submit"><span>Отправить</span></button>
       </form>
     </div>
+    <script src="js/popup.js"></script>
   </body>
 </html>
