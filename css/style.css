@@ -485,7 +485,6 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  z-index: -1;
 }
 
 .container-map img {
@@ -502,6 +501,7 @@ a {
   padding: 55px 50px 50px;
   width: 220px;
   background-color: #fff;
+  position: relative;
 }
 
 .write-us-adress {
@@ -658,8 +658,9 @@ a {
   background-color: #fff;
   box-shadow: 0 20px 40px 0 rgba(0,1,1,.75);
   padding: 68px 95px 82px;
-  left: 25%;
-  top: 21%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   width: 770px;
   height: 440px;
   z-index: 5;
@@ -676,26 +677,26 @@ a {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-100px);
+    transform: translate(-50%,-50%) translateY(-100px);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translate(-50%,-50%) translateY(30px);
   }
 
   90% {
-    transform: translateY(10px);
+    transform: translate(-50%,-50%) translateY(10px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%,-50%) translateY(0);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(-50%,-50%) translateX(0);
   }
 
   10%,
@@ -703,14 +704,14 @@ a {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(-50%,-50%) translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(-50%,-50%) translateX(10px);
   }
 }
 
