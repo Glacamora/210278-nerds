@@ -266,6 +266,7 @@ a {
   color: #283136;
   margin-top: 0;
   margin-bottom: 0;
+  padding-right: 40px;
 }
 
 .main-offers-img {
@@ -323,7 +324,7 @@ a {
 
 .btn-order-red:active {
   background-color: #d7373b;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,.3);
   box-shadow: inset 0 3px 0 0 rgba(0,0,0,.1);
 }
 
@@ -340,7 +341,7 @@ a {
 
 .btn-order-green:active {
   background-color: #00aa62;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,.3);
   box-shadow: inset 0 3px 0 0 rgba(0,0,0,.1);
 }
 
@@ -357,8 +358,8 @@ a {
 
 .btn-order-gold:active {
   background-color: #e5a722;
-  color: rgba(255,255,255,0.3);
-  box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
+  color: rgba(255,255,255,.3);
+  box-shadow: inset 0 3px 0 0 rgba(0,0,0,.1);
 }
 
 .btn-price {
@@ -374,7 +375,7 @@ a {
 
 .btn-price:active {
   background-color: #d7373b;
-  box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
+  box-shadow: inset 0 3px 0 0 rgba(0,0,0,.1);
 }
 
 .about {
@@ -453,8 +454,6 @@ a {
 
 .advantages-title {
   font-weight: 700;
-  text-align: start;
-  padding-left: 17px;
   padding-bottom: 32px;
   text-transform: uppercase;
 }
@@ -831,10 +830,6 @@ a {
   margin-bottom: 16px;
 }
 
-.catalog-filter-price-control .catalog-filter-title:first-child {
-  margin-bottom: 45px;
-}
-
 .catalog {
   margin-left: auto;
   width: 760px;
@@ -906,6 +901,7 @@ a {
   width: 100%;
   height: 80px;
   width: 260px;
+  margin-top: 29px;
   margin-bottom: 14px;
 }
 
@@ -1151,7 +1147,7 @@ a {
 }
 
 .product:hover {
-  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 6px 15px 0 rgba(0,1,1,.25);
 }
 
 .product img {
