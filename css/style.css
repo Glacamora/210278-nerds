@@ -154,12 +154,16 @@ a {
   margin-bottom: 80px;
 }
 
-.main-sliders-wrapper {
+.main-slider-wrapper {
+  position: relative;
+}
+
+.main-sliders-container {
   padding-top: 70px;
   padding-bottom: 80px;
 }
 
-.main-sliders-wrapper b {
+.main-sliders-container b {
   display: block;
   font-size: 55px;
   line-height: 55px;
@@ -170,17 +174,17 @@ a {
 
 .main-slide1-wrapper {
   background: url("../img/slide1.png") no-repeat;
-  background-position: calc(100% - 52px) bottom;
+  background-position: calc(100% - 29px) bottom;
 }
 
 .main-slide2-wrapper {
   background: url("../img/slide2.png") no-repeat;
-  background-position: calc(100% - 22px) top;
+  background-position: calc(100% - 3px) top;
 }
 
 .main-slide3-wrapper {
   background: url("../img/slide3.png") no-repeat;
-  background-position: calc(100% - 22px) bottom;
+  background-position: calc(100% - 3px) bottom;
 }
 
 .main-slide1-title {
@@ -195,13 +199,13 @@ a {
   width: 412px;
 }
 
-.main-sliders-wrapper p {
+.main-sliders-container p {
   color: #283136;
   margin-bottom: 38px;
 }
 
 .main-slide1-text {
-  width: 360px;
+  width: 362px;
 }
 
 .main-slide2-text {
@@ -219,8 +223,9 @@ a {
 .main-slider-toggles {
   display: flex;
   position: absolute;
-  top: 433px;
-  left: 47%;
+  top: 312px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main-slider-toggle {
@@ -375,7 +380,7 @@ a {
 .about {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 70px;
+  padding-bottom: 76px;
   border-bottom: 2px solid #eee;
 }
 
@@ -480,14 +485,22 @@ a {
 }
 
 .container-map img,
-.container-map iframe {
+.ya-map {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
 }
 
+.ya-map {
+  width: 100%;
+  height: 416px;
+  border: 0;
+}
+
 .container-map img {
+  width: 1440px;
+  height: 416px;
   z-index: -2;
 }
 
@@ -498,7 +511,7 @@ a {
 }
 
 .write-us {
-  padding: 55px 50px 50px;
+  padding: 50px 50px 47px;
   width: 220px;
   background-color: #fff;
   position: relative;
@@ -513,7 +526,7 @@ a {
   display: block;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   text-transform: uppercase;
 }
 
@@ -534,7 +547,7 @@ a {
 .write-us-button {
   font-size: 16px;
   background-color: #fb565a;
-  margin-top: 37px;
+  margin-top: 38px;
   padding: 16px 45px;
 }
 
@@ -542,7 +555,7 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 70px 20px;
+  padding: 60px 20px;
 }
 
 .footer-text {
@@ -550,14 +563,17 @@ a {
 }
 
 .footer-text b {
+  display: block;
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 10px;
 }
 
 .footer-text p {
   line-height: 22px;
   color: #283136;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .popup-close-btn {
