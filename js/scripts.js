@@ -20,6 +20,22 @@ var storage = localStorage.getItem ("email")
   }
 });
 
+  writeUsBtn.addEventListener("keydown", function(event) {
+  if (event.keyCode === 32) {
+    event.preventDefault();
+    popup.classList.add("popup-visible");
+  }
+
+  if (storage) {
+    email.value = storage;
+    text.focus()
+  }
+
+  else {
+    email.focus();
+  }
+});
+
   popupClose.addEventListener("click", function(event) {
   popup.classList.remove("popup-visible");
   popup.classList.remove("popup-error");
@@ -33,6 +49,8 @@ var storage = localStorage.getItem ("email")
     popup.classList.remove("popup-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("popup-error");
+    eMail.classList.add("popup-input-error");
+    textArea.classList.add("popup-input-error");
     console.log("Нужно ввести имейл и текст письма");
   }
 
@@ -41,6 +59,8 @@ var storage = localStorage.getItem ("email")
     popup.classList.remove("popup-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("popup-error");
+    eMail.classList.add("popup-input-error");
+    textArea.classList.add("popup-input-error");
     console.log("Нужно ввести имейл и текст письма");
   }
 
@@ -50,8 +70,12 @@ var storage = localStorage.getItem ("email")
     popup.classList.remove("popup-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("popup-error");
+    textArea.classList.add("popup-input-error");
     console.log("Нужно ввести текст письма");
-    text.focus()
+    textArea.addEventListener("focus", function(event) {
+      event.preventDefault();
+      textArea.classList.remove("popup-input-error");
+    });
   }
 
   if (event.keyCode === 32) {
@@ -59,8 +83,12 @@ var storage = localStorage.getItem ("email")
     popup.classList.remove("popup-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("popup-error");
+    textArea.classList.add("popup-input-error");
     console.log("Нужно ввести текст письма");
-    text.focus()
+    textArea.addEventListener("focus", function(event) {
+      event.preventDefault();
+      textArea.classList.remove("popup-input-error");
+    });
   }
 
   if
@@ -69,8 +97,12 @@ var storage = localStorage.getItem ("email")
     popup.classList.remove("popup-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("popup-error");
+    eMail.classList.add("popup-input-error");
     console.log("Нужно ввести имейл");
-    email.focus()
+    eMail.addEventListener("focus", function(event) {
+      event.preventDefault();
+      eMail.classList.remove("popup-input-error");
+    });
   }
 
   if (event.keyCode === 32) {
@@ -78,8 +110,12 @@ var storage = localStorage.getItem ("email")
     popup.classList.remove("popup-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("popup-error");
+    eMail.classList.add("popup-input-error");
     console.log("Нужно ввести имейл");
-    email.focus()
+    eMail.addEventListener("focus", function(event) {
+      event.preventDefault();
+      eMail.classList.remove("popup-input-error");
+    });
   }
 
   else {
